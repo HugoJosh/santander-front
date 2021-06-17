@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     color: #025157;
 }
@@ -7,13 +13,70 @@ button {
     background-color: #025157;
 }
 
+.header {
+    margin: 40px 20px 0px 20px;
+/* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
+    font-size: 0;
+    height: 45px;
+    font-family: sans-serif;
+  }
+
+.header > * {
+     display: inline-block;
+     font-size: 16px;
+     vertical-align: middle;
+     height: 100%;
+     line-height: 45px;
+ }
+
 body {
     background-color: #fffbf7;
-    background-image: url("https://img.blogs.es/anexom/wp-content/uploads/2020/08/pinterest-fondos-1.jpg");
 }
 
+.logo{
+    width: 15%;
+}
+
+.navbar{
+    width: 70%;
+    text-align: center;
+    color: #025157;
+    font-weight: 500;
+}
+.menu-item{
+    display:inline;
+    margin-left: 25px;
+    margin-right:25px;
+}
+.actions{
+    width: 15%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 600;
+}
+.actions>*{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.actions a{
+    color:#67b54b;
+}
+.actions button{
+    color:white;
+    background-color:#67b54b;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 0;
+    border-radius: 5px;
+}
 p {
     color: #8b8b8bcc;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+li{
+    display: inline
 }
