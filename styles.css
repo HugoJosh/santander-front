@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,55 +15,60 @@ button {
 
 .header {
     margin: 40px 20px 0px 20px;
-/* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
+    /* 10px arriba, 3px derecha, 30px abajo, 5px izquierda */
     font-size: 0;
     height: 45px;
     font-family: sans-serif;
-  }
+}
 
-.header > * {
-     display: inline-block;
-     font-size: 16px;
-     vertical-align: middle;
-     height: 100%;
-     line-height: 45px;
- }
+.header>* {
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
 
 body {
     background-color: #fffbf7;
 }
 
-.logo{
+.logo {
     width: 15%;
 }
 
-.navbar{
+.navbar {
     width: 70%;
     text-align: center;
     color: #025157;
     font-weight: 500;
 }
-.menu-item{
-    display:inline;
+
+.menu-item {
+    display: inline;
     margin-left: 25px;
-    margin-right:25px;
+    margin-right: 25px;
 }
-.actions{
+
+.actions {
     width: 15%;
     text-align: right;
     font-size: 14px;
 }
-.actions>*{
+
+.actions>* {
     margin-left: 10px;
     margin-right: 10px;
 }
-.actions a{
-    color:#67b54b;
+
+.actions a {
+    color: #67b54b;
     font-weight: 600;
 }
-.actions button{
-    color:white;
-    background-color:#67b54b;
+
+.actions button {
+    color: white;
+    background-color: #67b54b;
     padding-left: 14px;
     padding-right: 14px;
     padding-top: 12px;
@@ -72,13 +77,70 @@ body {
     border-radius: 5px;
     font-weight: 600;
 }
+
 p {
     color: #8b8b8bcc;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-li{
+li {
     display: inline;
     font-weight: 600;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+
+.publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+
+.publish>p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish>form {
+    display: flex;
+}
+
+.publish>form p {
+    color: #025157;
+    margin-right: 18px;
+}
+
+.explanatory-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.explanatory-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
+main{
+    margin-top: 150px;
+    text-align: center;
 }
