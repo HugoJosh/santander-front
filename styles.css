@@ -129,8 +129,9 @@ li {
     margin-bottom: 20px;
 }
 
-.publish>form {
+.publish form {
     display: flex;
+    flex-direction: row;
 }
 
 .publish>form p {
@@ -285,7 +286,7 @@ main {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
-.features>.feature-tarjeta {
+.features .feature-tarjeta {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -344,7 +345,7 @@ main {
     text-decoration: none;
 }
 
-.cards{
+.cards {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -445,3 +446,123 @@ main {
     color: #67b54b;
     font-weight: 600;
 }
+
+main form {
+    display: flex;
+    flex-direction: row;
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+    .navbar,
+    .actions {
+        display: none;
+    }
+    body{
+        max-width:100% !important;
+    }
+    main {
+        margin-top: 60px;
+        text-align: center;
+        width:100% !important;
+    }
+    .feature-tarjeta .feature-image {
+        width: 40%;
+        position: relative;
+        right: 40px;
+    }
+
+    .header {
+        height: 20px;
+    }
+
+
+        /** Media queries previos al banner **/
+        .promo {
+          flex-direction: column;
+          max-width: 90%;
+        }
+        .explanatory-video>video{
+            width: 100%;
+        }
+    
+    .tarjetas,.cards,.features{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .features{
+        height: 2250px;
+    }
+    .features .feature-tarjeta {
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .tarjeta-individual-info {
+        padding: 25px 5px 25px 5px;
+    }
+
+    .tarjeta-individual-img {
+        width: 260px;
+    }
+
+    .tarjetas {
+        gap: 5px;
+    }
+
+    .header h1 {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    main form{
+        flex-direction: column;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    main h1,h2,p{
+        width:100%;
+    }
+
+    .publish>form {
+        flex-direction: column;
+    }
+
+    .publish>form>div {
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .publish>form>div>input {
+        width: 65%;
+    }
+
+    main img{
+        width: 80%;
+    }
+    .promotional{
+        margin-top: 40px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    .cards{
+        padding-bottom: 60px;
+    }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
