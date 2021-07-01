@@ -42,12 +42,12 @@ body>* {
     width: 15%;
 }
 
-.navbar {
+/* .navbar {
     width: 70%;
     text-align: center;
     color: #025157;
     font-weight: 500;
-}
+} */
 
 .menu-item {
     display: inline;
@@ -449,16 +449,22 @@ main {
 
 main form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+main form input{
+    width:30%;
 }
 
 /** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px) {
 
-    .navbar,
+    /* .navbar,
     .actions {
         display: none;
-    }
+    } */
     body{
         max-width:100% !important;
     }
