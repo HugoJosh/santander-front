@@ -280,7 +280,7 @@ main {
 
 .features {
     background-color: #025157;
-    height: 900px;
+    height: 1000px;
     padding: 5% 10%;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
@@ -297,6 +297,7 @@ main {
     align-items: center;
     overflow: hidden;
 }
+
 
 .feature-tarjeta>.feature-caja {
     padding: 20px 30px 40px 40px;

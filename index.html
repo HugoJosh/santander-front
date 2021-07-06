@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matcha</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" -->
-        <!-- integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <!-- integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link href="./styles.css" rel="stylesheet">
     </link>
+    <link href="./output.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -24,7 +25,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="./pricing.css" /> -->
 </head>
 
-<body>
+<body style="max-width: 100vw;"></body>
     <!-- <section class="fixed-header">
         <header class="header">
             <a href="./index.html" class="logo">
@@ -47,47 +48,37 @@
     </section> -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <a class="navbar-brand" href="#">
-          <img
-            src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg"
-            alt="Matcha"
-          />
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha" />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Platform</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="./pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Customers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 actions">
-            <a>Sign In</a>
-            <button>Start free trial</button>
-          </form>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Platform</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 actions">
+                <a>Sign In</a>
+                <button>Start free trial</button>
+            </form>
         </div>
-      </nav>
+    </nav>
     <main>
         <div>
             <h1>Hola</h1>
@@ -97,43 +88,139 @@
             </p>
         </div>
     </main>
-        <section id="form" class="mx-lg-auto" style="margin:10px auto; width:100vw;">
-        
-            <form class="mx-lg-auto mx-sm-auto" style="width:80%;">
-                <div class="form-row mx-auto">
-                    <div class="form-group col-4">
-                        <label for="exampleInputEmail1">Nombre:</label>
-                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group col-4">
-                        <label for="exampleInputEmail2">Apellidos:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group col-4">
-                        <label for="formControlRange">Edad:</label>
-                        <input type="range" class="form-control-range" id="formControlRange">
-                    </div>
-                </div>
-                <div class="form-row mx-auto">
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputEmail4">Correo:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                </div>
-                <div class="form-row mx-auto">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-    
-    
-            </form>
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Imagen" style="width:40%"/> 
-        </section>
+    <section id="form"
+        style="display:flex; align-items: center; margin-bottom:20px; justify-content:center; gap:20px ; width:100%; max-width:90vw; flex-direction: column;">
 
-        <!-- <form action="">
+        <form>
+            <div class="form-row mx-auto">
+                <div class="form-group col-4">
+                    <label for="exampleInputEmail1">Nombre:</label>
+                    <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-4">
+                    <label for="exampleInputEmail2">Apellidos:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-4">
+                    <label for="formControlRange">Edad:</label>
+                    <input type="range" class="form-control-range" id="formControlRange">
+                </div>
+            </div>
+            <div class="form-row mx-auto">
+                <div class="form-group col-md-6">
+                    <label for="exampleInputEmail4">Correo:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail4" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="exampleInputPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </div>
+            <div class="form-row mx-auto">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+
+        </form>
+        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Imagen" style="width:40%" />
+    </section>
+
+    <section class="blog m-auto">
+        <div class="row">
+            <div class="col">
+                <h2 class="title">Learn how to grow your ecommerce business.</h2>
+                <article class="process-list">
+                    <div class="process">
+                        <div class="process-icon">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/build-20-454867.png"
+                                alt="Build icon" />
+                        </div>
+                        <div class="process-description">
+                            <h3>Build</h3>
+                            <p>and scale your ecommerce store</p>
+                        </div>
+                    </div>
+                    <div class="process">
+                        <div class="process-icon">
+                            <img src="https://catwatchful.com/main/wp-content/uploads/2014/09/rocket-icon.png"
+                                alt="Attract icon" />
+                        </div>
+                        <div class="process-description">
+                            <h3>Attract</h3>
+                            <p>your target audience and grow site traffic</p>
+                        </div>
+                    </div>
+                    <div class="process">
+                        <div class="process-icon">
+                            <img src="https://icon-library.com/images/icon-convert/icon-convert-2.jpg"
+                                alt="Convert icon" />
+                        </div>
+                        <div class="process-description">
+                            <h3>Convert</h3>
+                            <p>readers to subscribers and customers</p>
+                        </div>
+                    </div>
+                </article>
+                <button>Read the blog</button>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+                        class="card-img-top"
+                        alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+                        </h5>
+                        <p class="metadata">
+                            <strong class="category">Performance Blogging </strong>
+                            <strong class="read-time">• 21 mins read</strong>
+                        </p>
+                        <p class="card-text">
+                            Table of ContentsWhy Ecommerce Businesses Need a Blog in
+                            2020Document Your Ecommerce Blog StrategyPublication: How to Create
+                            High-Performing Blog ContentDistribution:...
+                            <span class="read-more">+ <a>Read More</a></span>
+                        </p>
+                        <div class="author">
+                            <img src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+                                alt="Shauna Ward" />
+                            <p>Shauna Ward</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
+                        class="card-img-top" alt="What Is Licensed Content and How Does It Help Your Business Grow?" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            What Is Licensed Content and How Does It Help Your Business Grow?
+                        </h5>
+                        <p class="metadata">
+                            <strong class="category">Performance Blogging </strong>
+                            <strong class="read-time">• 6 mins read</strong>
+                        </p>
+                        <p class="card-text">
+                            Table of ContentsWhy Ecommerce Businesses Need a Blog in
+                            2020Document Your Ecommerce Blog StrategyPublication: How to Create
+                            High-Performing Blog ContentDistribution:...
+                            <span class="read-more">+ <a>Read More</a></span>
+                        </p>
+                        <div class="author d-flex align-items-center">
+                            <img src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&d=retro&r=g"
+                                alt="Rob Glover" />
+                            <p>Rob Glover</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <form action="">
             <label for="name">Nombre:</label>
             <input type="text" required id="name" name="name" placeholder="Nombre"><br>
             <label for="apellido">Apellidos:</label>
@@ -146,8 +233,8 @@
             <input type="password" placeholder="Contrasena" id="contrasena" name="contrasena"><br>
             <button type="submit">Enviar</button>
         </form> -->
-        <section id="carrusel " class="mx-lg-auto" style="width: 100vw;" >
-        
+    <section id="carrusel " class="mx-lg-auto" style="width: 100vw;">
+
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
             style="width:60%;margin:40px auto;">
             <ol class="carousel-indicators">
@@ -179,6 +266,7 @@
             </a>
         </div>
     </section>
+
 
 
     <section class="promo">
