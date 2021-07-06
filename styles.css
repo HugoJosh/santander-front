@@ -281,7 +281,7 @@ main {
 .features {
     background-color: #025157;
     height: 1000px;
-    padding: 5% 10%;
+    padding: 5% 2.5%;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
@@ -347,13 +347,14 @@ main {
 }
 
 .cards {
-    width: 80%;
-    margin: 0px auto;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding: 60px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
     text-align: center;
+    margin: 10px 30px;
 }
 
 .cards-art>* {
@@ -373,6 +374,9 @@ main {
     font-weight: 200px;
     line-height: 30px;
     color: #025157;
+}
+.cards-art>button{
+    margin-bottom: 10px;
 }
 
 .cards-art a {
@@ -502,13 +506,7 @@ main form input{
         flex-direction: row;
         margin-bottom: 10px;
     }
-    .features {
-        background-color: #025157;
-        height: 1000px;
-        padding: 5% 10%;
-        display: grid;
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    }
+
     .features .feature-tarjeta {
         margin-bottom: 10px;
         margin-left: 5px;
@@ -566,6 +564,12 @@ main form input{
     }
     .cards{
         padding-bottom: 60px;
+    }
+    .features{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
     }
 }
 
