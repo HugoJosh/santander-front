@@ -45,8 +45,7 @@
 }
 .blog button {
   height: auto;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
   padding: 12px;
   width: 180px;
   margin-bottom: 15px;
